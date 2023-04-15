@@ -1,0 +1,22 @@
+class Solution {
+    public int vowelStrings(String[] words, int left, int right) 
+    {
+        int c=0;
+        for(int i=left;i<=right;i++)
+        {
+        
+           String str=words[i];
+           char ch1=str.charAt(0);
+           char ch2=str.charAt(str.length()-1);
+           if((ch1=='a'||ch1=='e'||ch1=='i'||ch1=='o'||ch1=='u')&&(ch2=='a'||ch2=='e'||ch2=='i'||           ch2=='o'||ch2=='u')){
+               c++;
+
+           }
+
+
+        }
+        return c;
+
+        
+    }
+}
